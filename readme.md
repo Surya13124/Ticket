@@ -18,33 +18,57 @@ Tech Stack
 •	Optional: Docker & Docker Compose
 •	Optional: GitHub Actions CI/CD pipeline
 •	Deployment: Can be deployed on Render, Railway, or Vercel
+
 Project Structure
+
 client/
+
+
   ├── src/
+  
   │   ├── Components/
+  
   │   │   ├── LoginSignup.jsx
+  
   │   │   └── InputTicket.jsx
+  
   │   └── App.js
+  
   └── package.json
+
 server/
+
   ├── db.js          # PostgreSQL connection
+  
   ├── index.js       # Express server and API endpoints
+  
   └── package.json
+
 Database Schema
+
 tickets
+
 Field	Type
+
 id	Serial
+
 title	VARCHAR
+
 description	TEXT
+
 priority	ENUM (Low, Medium, High)
+
 status	ENUM (Open, In Progress, Closed)
+
 created_at	TIMESTAMP
+
 API Endpoints
 •	POST /tickets – Create a new ticket
 •	GET /tickets – Get all tickets
 •	PUT /tickets/:id – Update a ticket (status)
 •	DELETE /tickets/:id – Delete a ticket
 Setup Instructions
+
 Backend
 1.	Navigate to the backend folder:
  	cd server
@@ -54,6 +78,7 @@ Backend
 4.	Run the server:
  	nodemon start
  	Backend runs at http://localhost:5000.
+
 Frontend
 1.	Navigate to the frontend folder:
  	cd client
@@ -67,6 +92,8 @@ Screenshots
       ![Login](images/Screenshot%202025-08-22%20171530.png)
       ![Tickets](images/Screenshot%202025-08-22%20171754.png)
       ![Create](images/Screenshot%202025-08-22%20171806.png)
+      
 
 Author
+
 Balasurya, Madras Christian College
